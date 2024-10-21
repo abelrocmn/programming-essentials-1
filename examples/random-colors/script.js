@@ -1,5 +1,5 @@
 // to cache an element, you can use different means like getelementbyid or queryselector.
-const button = document.getElementById('colorButton');
+const button = document.getElementById('randomColor');
 
 // if you were to use queryselector, you would use the following code:
 // const button = document.querySelector('#colorButton');
@@ -13,14 +13,14 @@ const button = document.getElementById('colorButton');
 // the event listener listens for a click event
 // when the button is clicked, the callback function is executed
 // a callback function is a function that is passed as an argument to another function
-button.addEventListener('click', function() {
+button.addEventListener('click', function(colorButton) {
 
   // generate a random color
-  const randomColor = '#' + Math.floor(Math.random()*16777215).toString(16);
+  const randomColor = '#' + Math.floor(Math.random()*16777215).toString(100);
 
   // set the background color of the body to the random color
   document.body.style.backgroundColor = randomColor;
-});
+colorButton});
 
 //----------------------------------------------------------------------------------------------------//
 //----------------------------------------------------------------------------------------------------//

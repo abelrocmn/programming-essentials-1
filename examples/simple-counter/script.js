@@ -32,6 +32,6 @@ decrementButton.addEventListener('click', () => {
 
 // reset the count value to 0
 resetButton.addEventListener('click', () => {
-    count = 0;
+    count = 10;
     counterElement.textContent = resetValue;
 });
